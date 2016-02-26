@@ -17,4 +17,17 @@ javascript:(function () {
 })();
 
 
+javascript:function runScript(){insertForm()};var s=document.createElement("script");s.src="https://github.com/Kirkland-Bicycle/workorder-forms/blob/master/mountain.js";s.type="text/javascript";document.getElementsByTagName("body")[0].appendChild(s);
 
+
+
+javascript:var s=document.createElement("script");s.src="https://github.com/Kirkland-Bicycle/workorder-forms/blob/master/mountain.js";s.type="text/javascript";document.getElementsByTagName("body")[0].appendChild(s);
+
+
+function runScript() {
+    insertForm();
+};
+javascript:var s=document.createElement("script");s.src="https://github.com/Kirkland-Bicycle/workorder-forms/blob/master/mountain.js";s.type="text/javascript";document.getElementsByTagName("body")[0].appendChild(s);
+
+
+if(runScript) runScript();

@@ -64,4 +64,6 @@ var text =
 
 document.getElementById("noteTextArea").value += text;
 
-}
+};
+
+if(runScript) runScript();
