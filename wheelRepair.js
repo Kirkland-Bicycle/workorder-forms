@@ -1,4 +1,5 @@
 //Wheel Build
+
 var today = new Date();
 var currentDate = (today.getMonth() + 1) + "/" + today.getDate();
 var employeeName = document.getElementById("session_employee").textContent;
@@ -36,13 +37,13 @@ switch (employeeName) {
     employeeInitial = "TM";
     break;
   case "Zachary Holland":
-    employeeInitial = "ZH";
+  	employeeInitial = "ZH";
     break;
   case "Ken Fitzpatrick":
-    employeeInitial = "KF";
+  	employeeInitial = "KF";
     break;
-  case "New Employee":
-    employeeInitial = "";
+  case "Andy Cronin":
+  	employeeInitial = "AC";
     break;
   default:
     employeeInitial = "";
@@ -55,6 +56,7 @@ var text =
 	"[[ HUB ]] : \n" +
 	"[[ SPOKES ]] : \n" +
 	"[[ TIRE/QR/CASSETTE/ROTOR ]] : \n" +
-	"[[ OTHER ]] : "; 
+	"[[ OTHER ]] : \n"; 
 
-document.getElementById("noteTextArea").value += text;
+originalText = document.getElementById("noteTextArea").value;
+document.getElementById("noteTextArea").value = text + originalText;

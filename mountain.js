@@ -58,6 +58,7 @@ var text =
 	"[[ CABLE KITS ]] : \n" +
 	"[[ BEARINGS ]] : \n" +
 	"[[ SUSPENSION ]] : \n" +
-	"[[ OTHER ]] : "; 
+	"[[ OTHER ]] : \n"; 
 
-document.getElementById("noteTextArea").value += text;
+originalText = document.getElementById("noteTextArea").value;
+document.getElementById("noteTextArea").value = text + originalText;

@@ -1,4 +1,5 @@
 //Appointment
+
 var today = new Date();
 var currentDate = (today.getMonth() + 1) + "/" + today.getDate();
 var employeeName = document.getElementById("session_employee").textContent;
@@ -41,19 +42,23 @@ switch (employeeName) {
   case "Ken Fitzpatrick":
     employeeInitial = "KF";
     break;
-  case "New Employee":
-    employeeInitial = "";
+  case "Andy Cronin":
+    employeeInitial = "AC";
     break;
   default:
     employeeInitial = "";
 }
 
 var text =
-  "** DO FULL CHECK-IN PROCESS WHEN BIKE IS DROPPED OFF **"
-  "Appointment Booked -- " + employeeInitial + " " + currentDate + ":\n" +
+  "** DO FULL CHECK-IN PROCESS WHEN BIKE IS DROPPED OFF **\n" +
+  "Appointment Booked -- " + employeeInitial + " " + currentDate + ": \n" +
 	"[[ REQUESTS ]] : \n" +
 	"[[ DEPOSIT? ]] : \n" +
   "[[ ESTIMATE QUOTED ]] : \n" +
-	"[[ OTHER ]] : "; 
+	"[[ OTHER ]] : \n"; 
 
-document.getElementById("noteTextArea").value += text;
+hookInText = "APPT - " + employeeInitial;
+document.getElementById("hookInInputField").value += hookInText;
+
+originalText = document.getElementById("noteTextArea").value;
+document.getElementById("noteTextArea").value = text + originalText;

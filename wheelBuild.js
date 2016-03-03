@@ -1,4 +1,5 @@
 //Wheel Build
+
 var today = new Date();
 var currentDate = (today.getMonth() + 1) + "/" + today.getDate();
 var employeeName = document.getElementById("session_employee").textContent;
@@ -41,8 +42,8 @@ switch (employeeName) {
   case "Ken Fitzpatrick":
     employeeInitial = "KF";
     break;
-  case "New Employee":
-    employeeInitial = "";
+  case "Andy Cronin":
+    employeeInitial = "AC";
     break;
   default:
     employeeInitial = "";
@@ -56,6 +57,7 @@ var text =
 	"[[ SPOKES ]] : \n" +
 	"[[ NIPPLES ]] : \n" +
   "[[ SPOKE CALC (ND/D) ]] : ( F: / ) ( R: / ) \n" +
-	"[[ OTHER ]] : "; 
+	"[[ OTHER ]] : \n"; 
 
-document.getElementById("noteTextArea").value += text;
+originalText = document.getElementById("noteTextArea").value;
+document.getElementById("noteTextArea").value = text + originalText;

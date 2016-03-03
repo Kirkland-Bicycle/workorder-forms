@@ -1,4 +1,5 @@
 //Warranty
+
 var today = new Date();
 var currentDate = (today.getMonth() + 1) + "/" + today.getDate();
 var employeeName = document.getElementById("session_employee").textContent;
@@ -41,23 +42,22 @@ switch (employeeName) {
   case "Ken Fitzpatrick":
     employeeInitial = "KF";
     break;
-  case "New Employee":
-    employeeInitial = "";
+  case "Andy Cronin":
+    employeeInitial = "AC";
     break;
   default:
     employeeInitial = "";
 }
 
-
 var text =
   "Check-in -- " + employeeInitial + " " + currentDate + ":\n" +
-  "[Item]: \n" +
-  "[Serial Number]: \n" +
-  "[Date of Purchase]: \n" +
-  "[Proof of Purchase?]: \n" +
-  "[Problem]: \n" +
-  "[Additional Notes]: \n";
+  "[[ Item ]] : \n" +
+  "[[ Serial Number ]] : \n" +
+  "[[ Date of Purchase ]] : \n" +
+  "[[ Proof of Purchase? ]]: \n" +
+  "[[ Problem ]] : \n" +
+  "[[ Other ]] : \n";
 
-document.getElementById("noteTextArea").value += text;
+originalText = document.getElementById("noteTextArea").value;
+document.getElementById("noteTextArea").value = text + originalText;
 document.getElementById("workorder_edit_status_field").value = 12; //set workorder to warranty open
-//merchantos.edit_workorder.updateStatusFieldTrigger(document.getElementById("workorder_edit_status_field"))
