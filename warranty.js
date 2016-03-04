@@ -61,3 +61,4 @@ var text =
 originalText = document.getElementById("noteTextArea").value;
 document.getElementById("noteTextArea").value = text + originalText;
 document.getElementById("workorder_edit_status_field").value = 12; //set workorder to warranty open
+merchantos.edit_workorder.updateStatusFieldTrigger(document.getElementById("workorder_edit_status_field"))
