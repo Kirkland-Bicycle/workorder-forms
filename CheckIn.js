@@ -1,4 +1,4 @@
-//Mountain Bike
+//Check-In
 
 var today = new Date();
 var currentDate = (today.getMonth() + 1) + "/" + today.getDate();
