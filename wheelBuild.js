@@ -50,7 +50,8 @@ var text =
 	"[[ HUB ]] : \n" +
 	"[[ SPOKES ]] : \n" +
 	"[[ NIPPLES ]] : \n" +
-  "[[ SPOKE CALC (ND/D) ]] : ( F: / ) ( R: / ) \n" +
+        "[[ SPOKE CALC (ND/D) ]] : ( F: / ) ( R: / ) \n" +
+        "[[ TIRE/QR/CASSETTE/ROTOR ]] : \n" +
 	"[[ OTHER ]] : \n"; 
 
 originalText = document.getElementById("noteTextArea").value;
