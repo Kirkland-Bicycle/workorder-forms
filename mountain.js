@@ -21,8 +21,11 @@ switch (employeeName) {
   case "Matt Caracoglia":
     employeeInitial = "MC";
     break;
-  case "Heather Blood":
-    employeeInitial = "HB";
+  case "Nicholas Rotter":
+    employeeInitial = "NR";
+    break;
+  case "Chase Stockwell":
+    employeeInitial = "CS";
     break;
   case "Garrett Stuart":
     employeeInitial = "GS";
@@ -43,12 +46,13 @@ switch (employeeName) {
 var text =
   "Check-in -- " + employeeInitial + " " + currentDate + ":\n" +
 	"[[ REQUESTS ]] : \n" +
-	"[[ WHEELS ]] : \n" +
+	"[[ WHEELS ]] : (Front: psi; Rear: psi)\n" +
 	"[[ BRAKES ]] : \n" +
 	"[[ DRIVETRAIN ]] : \n" +
 	"[[ CABLE KITS ]] : \n" +
 	"[[ BEARINGS ]] : \n" +
-	"[[ SUSPENSION ]] : \n" +
+	"[[ SUSPENSION ]] : (Fork: psi; Shock: psi)\n" +
+ 	"[[ GRIPS/BAR TAPE ]] : \n" +
 	"[[ OTHER ]] : \n"; 
 
 originalText = document.getElementById("noteTextArea").value;
