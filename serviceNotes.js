@@ -41,12 +41,19 @@ switch (employeeName) {
 }
 
 var text =
-  "Service -- " + employeeInitial + " " + currentDate + ": \n" +
+  "Servie -- " + employeeInitial + " " + currentDate + ":\n" +
 	"[[ MECHANIC'S NOTES ]] : \n" +
-	"[[ PARTS ALLOWANCE USED (Y/N) ]] : \n" +
-  "[[ RECOMMENDATIONS ]] : \n" +
-  "[[ CALLED (Y/N) ]] : \n" +
-	"[[ OTHER ]] : \n"; 
+	"[[ WHEELS ]] : (Front: psi; Rear: psi)\n" +
+	"[[ BRAKES ]] : \n" +
+	"[[ DRIVETRAIN ]] : \n" +
+	"[[ CABLE KITS ]] : \n" +
+	"[[ BEARINGS ]] : \n" +
+	"[[ SUSPENSION ]] : (Fork: psi; Shock: psi)\n" +
+ 	"[[ GRIPS/BAR TAPE ]] : \n" +
+        "[[ PARTS ALLOWANCE USED (Y/N) ]] : \n" +
+        "[[ RECOMMENDATIONS ]] : \n" +
+        "[[ CALLED (Y/N) ]] : \n" +
+	"[[ OTHER ]] : \n";
 
 originalText = document.getElementById("noteTextArea").value;
 document.getElementById("noteTextArea").value = text + originalText;
