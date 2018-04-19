@@ -41,7 +41,7 @@ switch (employeeName) {
 }
 
 var text =
-  "Servie -- " + employeeInitial + " " + currentDate + ":\n" +
+  "Service -- " + employeeInitial + " " + currentDate + ":\n" +
 	"[[ MECHANIC'S NOTES ]] : \n" +
 	"[[ WHEELS ]] : (Front: psi; Rear: psi)\n" +
 	"[[ BRAKES ]] : \n" +
