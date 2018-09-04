@@ -21,23 +21,20 @@ switch (employeeName) {
   case "Matt Caracoglia":
     employeeInitial = "MC";
     break;
-  case "Nicholas Rotter":
-    employeeInitial = "NR";
+  case "Mich Shearer":
+    employeeInitial = "MS";
     break;
   case "Chase Stockwell":
     employeeInitial = "CS";
     break;
-  case "Garrett Stuart":
-    employeeInitial = "GS";
-    break;
   case "Tom Maurer":
     employeeInitial = "TM";
     break;
-  case "James \"Kevin\" Matulis":
-    employeeInitial = "JKM";
-    break;
   case "Andy Cronin":
     employeeInitial = "AC";
+    break;
+  case "Gavin Haynes":
+    employeeInitial = "GH";
     break;
   default:
     employeeInitial = "";
