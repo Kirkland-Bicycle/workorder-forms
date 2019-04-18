@@ -6,26 +6,6 @@ They are very basic, but cut down on time needed by a little bit and it keeps no
 
 ## How to Set Up
 
-### Employees
-Replace all Employee names and initials to match current staff.
-The employee name must match the Lightspeed name that is shown on the sidebar.
-If there are quotes in the name use \\" \\" to add them inside the other quotes.
-The default initials (used if there is another user logged in that is not on the list) are blank but could be added.
-
-###### Example:
-```javascript
-switch (employeeName) {
-  case "John Smith":
-    employeeInitial = "JS";
-    break;
-  case "John \"JJ\" Johnson":
-    employeeInitial = "JJ";
-    break;
-  default:
-    employeeInitial = "??";
-}
-```
-
 ### Form Template
 
 Replace anything in the quotes to customize the wording of the text that will be inserted into the notes field.
