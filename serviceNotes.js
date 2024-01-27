@@ -1,22 +1,24 @@
-//Service Notes
-
 var today = new Date();
-var currentDate = (today.getMonth() + 1) + "/" + today.getDate();
+var currentDate = `${(today.getMonth() + 1)}`.padStart(2, "0") + "/" + today.getDate();
+var employee = window.merchantos.session.getEmployee();
+var employeeName = `${employee.firstName} ${employee.lastName.slice(0, 1)}`;
 
 var text =
-  "Service -- " + currentDate + ":\n" +
+	"==== SERVICE =====\n" +
+	"= " + currentDate + " (" + employeeName + ") =\n" +
 	"[[ MECHANIC'S NOTES ]] : \n" +
 	"[[ WHEELS ]] : (Front: psi; Rear: psi)\n" +
 	"[[ BRAKES ]] : \n" +
 	"[[ DRIVETRAIN ]] : \n" +
 	"[[ CABLE KITS ]] : \n" +
 	"[[ BEARINGS ]] : \n" +
-	"[[ SUSPENSION ]] : (Fork: psi; Shock: psi)\n" +
- 	"[[ GRIPS/BAR TAPE ]] : \n" +
-        "[[ PARTS ALLOWANCE USED (Y/N) ]] : \n" +
-        "[[ RECOMMENDATIONS ]] : \n" +
-        "[[ CALLED (Y/N) ]] : \n" +
+	"[[ SUSPENSION ]] : \n" +
+	"[[ GRIPS/BAR TAPE ]] : \n" +
+	"[[ PARTS ALLOWANCE USED? (Y/N) ]] : \n" +
+	"[[ RECOMMENDATIONS ]] : \n" +
+	"[[ CONTACTED? ]] : \n" +
 	"[[ OTHER ]] : \n";
 
-originalText = document.getElementById("noteTextArea").value;
-document.getElementById("noteTextArea").value = text + originalText;
+var textArea = document.getElementById("noteTextArea");
+textArea.value = text + textArea.value;
+textArea.onchange();
